@@ -5,7 +5,7 @@ import tensorflow as tf
 
 from writer import Writer
 from utils import general_utils as utils
-
+import numpy as np
 
 class Inference(object):
     def __init__(self, args, model):
