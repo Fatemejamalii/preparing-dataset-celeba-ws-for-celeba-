@@ -55,7 +55,7 @@ class G(Model):
         # Move to roughly [0,1]
         out = (out + 1) / 2
 
-        return out, id_embedding,  attr_out, w[:, 0, :], lnds
+        return out, id_embedding,  attr_out, w[0, :, :], lnds
 
     def my_save(self, reason=''):
         self.attr_encoder.my_save(reason)
