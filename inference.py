@@ -30,7 +30,7 @@ class Inference(object):
             w = self.G(id_img, attr_img)[3]
 
 #             utils.save_image(out_img, self.args.output_dir.joinpath(f'{img_name.name}'))
-            np.save(self.args.output_dir.joinpath(f'{img_name.name[:-4}'+ '.npy'), w, allow_pickle=False)
+            np.save(self.args.output_dir.joinpath(f'{img_name.name[:-4]}'+ '.npy'), w, allow_pickle=False)
 
     def infer_on_dirs(self):
         attr_paths = list(self.args.attr_dir.iterdir())
